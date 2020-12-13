@@ -1,0 +1,279 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_FET:VN10LF Q?
+U 1 1 5FD4E99C
+P 4900 2850
+F 0 "Q?" H 5104 2896 50  0000 L CNN
+F 1 "VN0300L" H 5104 2805 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5100 2775 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/VN10LF.pdf" H 4900 2850 50  0001 L CNN
+	1    4900 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U?
+U 1 1 5FD51D06
+P 3900 4050
+F 0 "U?" H 3900 4417 50  0000 C CNN
+F 1 "LM358" H 3900 4326 50  0000 C CNN
+F 2 "" H 3900 4050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 3900 4050 50  0001 C CNN
+	1    3900 4050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U?
+U 2 1 5FD54283
+P 3900 2850
+F 0 "U?" H 3900 3217 50  0000 C CNN
+F 1 "LM358" H 3900 3126 50  0000 C CNN
+F 2 "" H 3900 2850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 3900 2850 50  0001 C CNN
+	2    3900 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U?
+U 3 1 5FD55382
+P 4000 4900
+F 0 "U?" H 3958 4946 50  0000 L CNN
+F 1 "LM358" H 3958 4855 50  0000 L CNN
+F 2 "" H 4000 4900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 4000 4900 50  0001 C CNN
+	3    4000 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FD6A6F9
+P 3900 4500
+F 0 "#PWR?" H 3900 4350 50  0001 C CNN
+F 1 "+3.3V" H 3915 4673 50  0000 C CNN
+F 2 "" H 3900 4500 50  0001 C CNN
+F 3 "" H 3900 4500 50  0001 C CNN
+	1    3900 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FD6BCD0
+P 3900 5350
+F 0 "#PWR?" H 3900 5100 50  0001 C CNN
+F 1 "GND" H 3905 5177 50  0000 C CNN
+F 2 "" H 3900 5350 50  0001 C CNN
+F 3 "" H 3900 5350 50  0001 C CNN
+	1    3900 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4600 3900 4500
+Wire Wire Line
+	3900 5200 3900 5350
+Wire Wire Line
+	4200 2850 4700 2850
+$Comp
+L power:GND #PWR?
+U 1 1 5FD88DE3
+P 5000 3150
+F 0 "#PWR?" H 5000 2900 50  0001 C CNN
+F 1 "GND" H 5005 2977 50  0000 C CNN
+F 2 "" H 5000 3150 50  0001 C CNN
+F 3 "" H 5000 3150 50  0001 C CNN
+	1    5000 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3050 5000 3150
+$Comp
+L power:GND #PWR?
+U 1 1 5FD89EA7
+P 4300 4250
+F 0 "#PWR?" H 4300 4000 50  0001 C CNN
+F 1 "GND" H 4305 4077 50  0000 C CNN
+F 2 "" H 4300 4250 50  0001 C CNN
+F 3 "" H 4300 4250 50  0001 C CNN
+	1    4300 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4250 4300 4150
+Wire Wire Line
+	4300 4150 4200 4150
+Text Notes 3150 1650 0    197  ~ 39
+MORSEKOB4 INTERFACE CIRCUIT
+$Comp
+L Telegraph:Sounder U1
+U 1 1 5FD8F5CF
+P 6950 3150
+F 0 "U1" H 7902 3472 118 0000 L CNN
+F 1 "Sounder" H 7902 3279 118 0000 L CNN
+F 2 "" H 6800 3350 118 0001 C CNN
+F 3 "" H 6800 3350 118 0001 C CNN
+	1    6950 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Telegraph:Key U2
+U 1 1 5FD9EE1F
+P 6550 4200
+F 0 "U2" H 7369 4297 118 0000 L CNN
+F 1 "Key" H 7369 4104 118 0000 L CNN
+F 2 "" H 6525 4205 118 0001 C CNN
+F 3 "" H 6525 4205 118 0001 C CNN
+	1    6550 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3450 5850 3450
+Wire Wire Line
+	5850 3450 5850 4100
+Wire Wire Line
+	5850 4100 6100 4100
+Wire Wire Line
+	5000 2650 5000 2550
+Wire Wire Line
+	5000 2550 5350 2550
+Wire Wire Line
+	5850 2550 5850 2850
+Wire Wire Line
+	5850 2850 6000 2850
+$Comp
+L Connector:Conn_Coaxial_Power J1
+U 1 1 5FDDEF89
+P 5850 5100
+F 0 "J1" H 5938 5096 50  0000 L CNN
+F 1 "Conn_Coaxial_Power" H 5938 5005 50  0000 L CNN
+F 2 "" H 5850 5050 50  0001 C CNN
+F 3 "~" H 5850 5050 50  0001 C CNN
+	1    5850 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FDE0E58
+P 5850 4600
+F 0 "R2" H 5920 4646 50  0000 L CNN
+F 1 "10" H 5920 4555 50  0000 L CNN
+F 2 "" V 5780 4600 50  0001 C CNN
+F 3 "~" H 5850 4600 50  0001 C CNN
+	1    5850 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2550 5850 2550
+$Comp
+L Device:R R1
+U 1 1 5FDE385F
+P 5500 2550
+F 0 "R1" V 5570 2596 50  0000 L CNN
+F 1 "10" V 5570 2505 50  0000 R CNN
+F 2 "" V 5430 2550 50  0001 C CNN
+F 3 "~" H 5500 2550 50  0001 C CNN
+	1    5500 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 3950 5050 3950
+Wire Wire Line
+	5550 3950 5550 2850
+Wire Wire Line
+	5550 2850 5850 2850
+Connection ~ 5850 2850
+Wire Wire Line
+	6100 4300 5850 4300
+Wire Wire Line
+	5850 4300 5850 4450
+Wire Wire Line
+	5850 4750 5850 5000
+$Comp
+L power:GND #PWR?
+U 1 1 5FDF9E11
+P 5850 5450
+F 0 "#PWR?" H 5850 5200 50  0001 C CNN
+F 1 "GND" H 5855 5277 50  0000 C CNN
+F 2 "" H 5850 5450 50  0001 C CNN
+F 3 "" H 5850 5450 50  0001 C CNN
+	1    5850 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 5300 5850 5450
+$Comp
+L power:GND #PWR?
+U 1 1 5FDFA8BC
+P 3600 3100
+F 0 "#PWR?" H 3600 2850 50  0001 C CNN
+F 1 "GND" H 3605 2927 50  0000 C CNN
+F 2 "" H 3600 3100 50  0001 C CNN
+F 3 "" H 3600 3100 50  0001 C CNN
+	1    3600 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2950 3600 3100
+$Comp
+L power:GND #PWR?
+U 1 1 5FDFB4F9
+P 5050 4450
+F 0 "#PWR?" H 5050 4200 50  0001 C CNN
+F 1 "GND" H 5055 4277 50  0000 C CNN
+F 2 "" H 5050 4450 50  0001 C CNN
+F 3 "" H 5050 4450 50  0001 C CNN
+	1    5050 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4300 5050 4450
+$Comp
+L Device:R R3
+U 1 1 5FE05137
+P 5050 4150
+F 0 "R3" H 5120 4196 50  0000 L CNN
+F 1 "1000" H 5120 4105 50  0000 L CNN
+F 2 "" V 4980 4150 50  0001 C CNN
+F 3 "~" H 5050 4150 50  0001 C CNN
+	1    5050 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4000 5050 3950
+Connection ~ 5050 3950
+Wire Wire Line
+	5050 3950 5550 3950
+Text GLabel 3250 2750 0    118  Input ~ 0
+GPIOX
+Text GLabel 3250 4050 0    118  Input ~ 0
+GPIOY
+Wire Wire Line
+	3300 2750 3600 2750
+Wire Wire Line
+	3600 4050 3250 4050
+Text Notes 6650 2500 0    118  ~ 24
+4 OHM
+Text GLabel 3200 4600 0    118  Input ~ 0
+RPI3V
+Text GLabel 3200 5200 0    118  Input ~ 0
+RPIGND
+Wire Wire Line
+	3200 4600 3900 4600
+Connection ~ 3900 4600
+Wire Wire Line
+	3200 5200 3900 5200
+Connection ~ 3900 5200
+Text Notes 6050 5450 0    118  ~ 0
+To 5V DC Wall Supply
+$EndSCHEMATC
